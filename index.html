@@ -3,10 +3,17 @@
     <link rel="stylesheet" href="css/paper.min.css">
     <link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="css/rilut.css">
-    <!-- <script src="js/prefixfree.min.js" /> -->
 </head>
-<body>
-<div class="container">
+<body style="
+    /* z-index: 100; */
+    box-shadow: 20px;
+">
+<img src="img/jogja.png" style="
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+">
+<div class="container" style="
+    padding-top: 1%;
+">
     <div class="row">
         <!-- Card Projects -->
         <div class="col-md-6 col-lg-4">
@@ -50,13 +57,13 @@
             
             <div class="card">
                 <div class="card-image">
-                    <div class=" biru" id="weather"></div>
+                    <div class=" biru" id="weather"><h2><i class="icon-21"></i> 32°C</h2></div>
                     <span class="card-title">Yogyakarta</span>
                 </div>
                 
                 <div class="card-content">
                     
-                    <table id="weather-forecast" class="table"></table>
+                    <table id="weather-forecast" class="table"><tbody><tr><th>Sat</th><th></th><th>Sun</th><th></th><th>Mon</th><th></th><th>Tue</th><th></th><th>Wed</th><th></th></tr><tr><td>29</td><td></td><td>30</td><td></td><td>31</td><td></td><td>29</td><td></td><td>30</td><td></td></tr></tbody></table>
                 </div>
                 
                 <div class="card-action">
@@ -117,7 +124,7 @@
 </div>    
 <div id="weather"></div>
 
-<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js'></script>
+<script src="http://codepen.io/assets/libs/fullpage/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 <script src="js/index.js"></script>
 </body></html>
